@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Developer Portfolio</title>
+    <meta name="description" content="Professional portfolio showcasing web development projects, skills, and experience">
+    <meta name="keywords" content="web developer, portfolio, frontend, backend, full-stack, javascript, react, node.js">
+    <meta name="author" content="Web Developer">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Web Developer Portfolio">
+    <meta property="og:description" content="Professional portfolio showcasing web development projects and skills">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Professional SVG Icons -->
+    <style>
+        /* Professional SVG Icons */
+        .icon { width: 20px; height: 20px; fill: currentColor; }
+        .icon-github::before { content: ""; }
+        .icon-linkedin::before { content: ""; }
+        .icon-twitter::before { content: ""; }
+        .icon-envelope::before { content: ""; }
+        .icon-phone::before { content: ""; }
+        .icon-location::before { content: ""; }
+        .icon-instagram::before { content: ""; }
+        .icon-arrow-up::before { content: ""; }
+        .icon-external::before { content: ""; }
+        .icon-code::before { content: ""; }
+        .icon-database::before { content: ""; }
+        .icon-tools::before { content: ""; }
+        .icon-download::before { content: ""; }
+        .icon-theme::before { content: ""; }
+    </style>
+</head>
+<body>
+
+<!-- Page Loader -->
+<div class="page-loader" id="page-loader">
+    <div class="loader-content">
+        <div class="loader-logo"></div>
+        <div class="loader-text">Loading MARK's Portfolio...</div>
+    </div>
+</div>
+
+<!-- Animated Particles Background -->
+<div class="particles" id="particles"></div>
+
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="container">
+        <div class="nav-logo">
+            <a href="#home" class="logo">Mark</a>
+        </div>
+        <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-content-wrapper">
+                    <h1 class="hero-title">MARK NJOROGE</h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text">Web Developer</span>
+                    </div>
+                    <p class="hero-description">
+                        Creating modern web applications with clean code and great user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-avatar">
+                    <img src="https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-6/686936155_1614929883759537_5195672607571898836_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeGczvhMJ2EgPdl4G9Y8JUNen3lMJRX0maqfeUwlFfSZqhlMdvF6fo96Qdby4qScMmChpXi4oototXJiqcnardyA&_nc_ohc=CzoF2S3AdwwQ7kNvwFHvIdS&_nc_oc=AdqnYT0Zs1E4LfPZPgrlcEnXChk2xBOWBbR-vyXdRStzyGvBYlmN16liZXsAULTa3tw&_nc_zt=23&_nc_ht=scontent-mba2-1.xx&_nc_gid=VqG1bgua54j6tTQ4BQaPsg&_nc_ss=7b2a8&oh=00_Af7fJIvqbw_g46xnJNL4weIQOsCzWleH6_uAv89YB6J8AQ&oe=69FD94B6" alt="Profile Photo">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="https://scontent-mba2-1.xx.fbcdn.net/v/t39.30808-6/686936155_1614929883759537_5195672607571898836_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=dd6889&_nc_eui2=AeGczvhMJ2EgPdl4G9Y8JUNen3lMJRX0maqfeUwlFfSZqhlMdvF6fo96Qdby4qScMmChpXi4oototXJiqcnardyA&_nc_ohc=CzoF2S3AdwwQ7kNvwFHvIdS&_nc_oc=AdqnYT0Zs1E4LfPZPgrlcEnXChk2xBOWBbR-vyXdRStzyGvBYlmN16liZXsAULTa3tw&_nc_zt=23&_nc_ht=scontent-mba2-1.xx&_nc_gid=VqG1bgua54j6tTQ4BQaPsg&_nc_ss=7b2a8&oh=00_Af7fJIvqbw_g46xnJNL4weIQOsCzWleH6_uAv89YB6J8AQ&oe=69FD94B6" alt="About">
+                </div>
+                <div class="about-content">
+                    <h3>Building Digital Experiences</h3>
+                    <p>
+                        I'm a web developer with 1+ year of experience in creating innovative web solutions. 
+                        My journey in web development started with a curiosity about how websites work and evolved into 
+                        a passion for building applications that make a difference.
+                    </p>
+                    <p>
+                        I specialize in both frontend and backend development, with a strong foundation in modern JavaScript 
+                        frameworks and a keen eye for user experience. I believe in writing clean, maintainable code and 
+                        staying up-to-date with the latest industry trends.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="5+">0</h4>
+                            <p class="stat-label">Projects Completed</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="1">0</h4>
+                            <p class="stat-label">Years Experience</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="3">0</h4>
+                            <p class="stat-label">Happy Clients</p>
+                        </div>
+                        <div class="stat-item">
+                            <h4 class="stat-number" data-target="50">0</h4>
+                            <p class="stat-label">Technologies</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skill-category-filter">
+                <button class="skill-category-btn active" data-category="all">All Skills</button>
+                <button class="skill-category-btn" data-category="frontend">Frontend</button>
+                <button class="skill-category-btn" data-category="backend">Backend</button>
+                <button class="skill-category-btn" data-category="database">Database</button>
+                <button class="skill-category-btn" data-category="tools">Tools</button>
+            </div>
+            <div class="skills-container">
+                <!-- Skills will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery Projects Section -->
+    <section id="projects" class="photo-gallery-section">
+        <div class="container">
+            <h2 class="section-title">Project Gallery</h2>
+            <p class="section-subtitle">Visual showcase of my recent work and creative projects</p>
+            
+            <div class="photo-gallery">
+                <div class="gallery-grid">
+                    <!-- Project Photos will be dynamically loaded here -->
+                </div>
+            </div>
+            
+            <!-- Photo Modal -->
+            <div class="photo-modal" id="photo-modal">
+                <div class="modal-overlay" id="photo-modal-overlay"></div>
+                <div class="modal-content">
+                    <button class="modal-close" id="photo-modal-close">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                    </button>
+                    
+                    <div class="modal-body">
+                        <div class="modal-image-container">
+                            <img id="modal-photo" src="" alt="">
+                            <div class="modal-image-info">
+                                <h3 id="modal-title"></h3>
+                                <p id="modal-description"></p>
+                                <div class="modal-tech-tags" id="modal-tech-tags"></div>
+                                <div class="modal-actions">
+                                    <a href="#" id="modal-live-link" target="_blank" class="modal-btn primary">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                        </svg>
+                                        Live Demo
+                                    </a>
+                                    <a href="#" id="modal-github-link" target="_blank" class="modal-btn secondary">
+                                        <svg viewBox="0 0 24 24">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="modal-navigation">
+                            <button class="nav-btn prev-btn" id="prev-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                                </svg>
+                            </button>
+                            <button class="nav-btn next-btn" id="next-btn">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <h2 class="section-title">Client Testimonials</h2>
+            <p class="section-subtitle">What our clients say about our work</p>
+            
+            <div class="testimonials-marquee">
+                <div class="marquee-content">
+                    <!-- Testimonial 1 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "Mark delivered an exceptional portfolio website that exceeded our expectations. His attention to detail and modern design approach made our brand stand out."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>John Kamau</h4>
+                                    <p>CEO, TechHub Kenya</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The e-commerce platform Mark developed has doubled our online sales. His technical expertise and problem-solving skills are outstanding."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Sarah Wanjiru</h4>
+                                    <p>Founder, Nairobi Fashion Store</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 3 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "Working with Mark was a fantastic experience. He understood our requirements perfectly and delivered a beautiful, functional application on time."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>David Ochieng</h4>
+                                    <p>Manager, Logistics Pro Kenya</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 4 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "Mark's web development skills are top-notch. He created a stunning website for our restaurant that has significantly increased our online orders."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Grace Mwangi</h4>
+                                    <p>Owner, The Garden Restaurant</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 5 -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The dashboard application Mark built for our analytics needs is incredibly intuitive and powerful. Highly recommend his services!"
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Michael Kariuki</h4>
+                                    <p>CTO, Data Analytics Kenya</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Duplicate testimonials for seamless scrolling -->
+                    <!-- Testimonial 1 Duplicate -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "Mark delivered an exceptional portfolio website that exceeded our expectations. His attention to detail and modern design approach made our brand stand out."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>John Kamau</h4>
+                                    <p>CEO, TechHub Kenya</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Testimonial 2 Duplicate -->
+                    <div class="testimonial-card">
+                        <div class="testimonial-content">
+                            <div class="testimonial-text">
+                                "The e-commerce platform Mark developed has doubled our online sales. His technical expertise and problem-solving skills are outstanding."
+                            </div>
+                            <div class="testimonial-author">
+                                <div class="author-info">
+                                    <h4>Sarah Wanjiru</h4>
+                                    <p>Founder, Nairobi Fashion Store</p>
+                                </div>
+                                <div class="testimonial-rating">
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                    <span class="star">★</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>I'm always interested in hearing about new projects and opportunities.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                            </svg>
+                            <span>marknjorogembugua@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                            <span>0740799512</span>
+                        </div>
+                        <div class="contact-item">
+                            <svg class="icon" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                            </svg>
+                            <span>Nakuru, Kenya</span>
+                        </div>
+                    </div>
+                    
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" required placeholder="Your Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" required placeholder="Subject">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Web Development</li>
+                        <li>UI/UX Design</li>
+                        <li>Backend Development</li>
+                        <li>Consulting</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://wa.me/254740799512" target="_blank" class="social-link whatsapp-link" title="WhatsApp">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="6" fill="#25D366"/>
+                                <path d="M19.07 4.93c-1.78-1.78-4.13-2.75-6.64-2.75-5.19 0-9.43 4.23-9.43 9.43 0 1.66.43 3.26 1.26 4.69l-1.34 4.9 5.02-1.32c1.38.79 2.94 1.21 4.55 1.21 5.19 0 9.43-4.23 9.43-9.43-.01-2.51-.97-4.86-2.75-6.64z" fill="white" opacity="0.95"/>
+                                <path d="M12.43 14.62c-.11-.05-.63-.31-.73-.35-.1-.04-.17-.06-.24.04-.07.1-.27.37-.33.4-.06.03-.12.04-.18.02-.09-.03-.25-.11-.46-.23-.21-.12-.49-.35-.75-.33-.18.01-.35.07-.5.13-.15.06-.81.4-.81 1.02 0 .61.62 1.21 1.07 1.63.45.42 1.06.82 1.83 1.12.77.3 1.34.23 1.84.14.5-.09 1.55-.63 1.77-1.25.22-.62.22-1.15.15-1.26-.07-.11-.14-.17-.25-.22z" fill="#25D366"/>
+                            </svg>
+                        </a>
+                        <a href="https://t.me/254740799512" target="_blank" class="social-link telegram-link" title="Telegram">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <rect width="24" height="24" rx="6" fill="#0088CC"/>
+                                <path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-5.85c.73-.27 1.36.17 1.13 1.22l-2.67 12.62c-.24.89-.85 1.11-1.63.69L13.46 16.5l-2.29 2.21c-.23.23-.42.42-.83.42z" fill="white"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Web Developer Portfolio. All rights reserved.</p>
+                <a href="#" class="back-to-top" id="back-to-top">
+                    <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+<!-- Back to Top Button -->
+<a href="#" class="back-to-top" id="back-to-top">
+    <svg class="icon" viewBox="0 0 24 24">
+        <path d="M7 14l5-5 5 5z"/>
+    </svg>
+</a>
+
+</div>
+
+
+</body>
+</html>
